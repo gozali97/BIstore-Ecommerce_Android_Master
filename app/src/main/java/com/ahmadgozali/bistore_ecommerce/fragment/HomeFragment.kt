@@ -75,7 +75,6 @@ class HomeFragment : Fragment() {
         layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
 
         val layoutManager3 = GridLayoutManager(activity, 2)
-//        layoutManager3.orientation = LinearLayoutManager.HORIZONTAL
 
         rvProduk.adapter = AdapterProduk(requireActivity(), listProduk)
         rvProduk.layoutManager = layoutManager
