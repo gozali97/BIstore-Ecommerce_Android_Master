@@ -54,8 +54,6 @@ class HomeFragment : Fragment() {
     }
 
     private fun mainButton(){
-//        btnToKeranjang.setOnClickListener {
-//        }
     }
 
 
