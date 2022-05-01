@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1040062250658",
+    "project_id": "bistore58-66de0",
+    "storage_bucket": "bistore58-66de0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1040062250658:android:408e4dbd5b2ae2be9261fb",
+        "android_client_info": {
+          "package_name": "com.ahmadgozali.bistore_ecommerce"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1040062250658-gvrapupihrkld39iruunnl0etgf1fnra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ahmadgozali.bistore_ecommerce",
+            "certificate_hash": "c0e2b8c732caf731369657b3f14b1f7270775319"
+          }
+        },
+        {
+          "client_id": "1040062250658-kibqanqbsol24f5otufurb3h6toi614k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAq9EeFeTxugpwbNwFpYW27ziWguU0JRqo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1040062250658-kibqanqbsol24f5otufurb3h6toi614k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
