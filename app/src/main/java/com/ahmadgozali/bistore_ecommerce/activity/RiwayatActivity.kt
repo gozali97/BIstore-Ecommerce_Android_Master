@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.ahmadgozali.bistore_ecommerce.MainActivity
 import com.ahmadgozali.bistore_ecommerce.R
 import com.ahmadgozali.bistore_ecommerce.adapter.AdapterProduk
 import com.ahmadgozali.bistore_ecommerce.adapter.AdapterRiwayat
@@ -69,7 +70,26 @@ class RiwayatActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        onBackPressed()
+        if (IS_PAYMENT){
+            IS_PAYMENT = false
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        } else {
+            onBackPressed()
+        }
         return super.onSupportNavigateUp()
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        if (IS_PAYMENT){
+            IS_PAYMENT = false
+            startActivity(Intent(this, MainActivity::class.java))
+            finish()
+        }
+    }
+
+    companion object {
+        var IS_PAYMENT = false
     }
 }

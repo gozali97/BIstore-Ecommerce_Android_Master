@@ -47,6 +47,10 @@
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/layout/toolbar_detail.xml" value="0.25" />
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/xml/network.xml" value="0.2074074074074074" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.3423913043478261" />
+        <entry key="app/src/main/res/layout/activity_pembayaran.xml" value="0.1691995947315096" />
+        <entry key="app/src/main/res/layout/activity_pengiriman.xml" value="0.3423913043478261" />
+        <entry key="app/src/main/res/layout/toolbar.xml" value="0.13385416666666666" />
       </map>
     </option>
   </component>
