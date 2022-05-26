@@ -11,7 +11,6 @@ class Checkout {
     lateinit var jasa_pengiriman: String
     lateinit var ongkir: String
     lateinit var total_bayar: String
-    lateinit var bank: String
     var produks = ArrayList<Item>()
 
     class Item{

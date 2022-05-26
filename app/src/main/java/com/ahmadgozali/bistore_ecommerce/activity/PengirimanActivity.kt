@@ -145,7 +145,6 @@ class PengirimanActivity : AppCompatActivity() {
         checkout.detail_lokasi = tv_alamat.text.toString()
         checkout.total_bayar = "" + (totalHarga + Integer.valueOf(ongkir))
         checkout.produks = produks
-        checkout.bank = "BCA"
 
         val json = Gson().toJson(checkout, Checkout::class.java)
         Log.d("Respond: ", "json" +json)
