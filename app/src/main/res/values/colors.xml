@@ -25,7 +25,10 @@
     <color name="colorOrange">#FF5722</color>
     <color name="colorBiru">#03A9F4</color>
 
-    <color name="menunggu">#FFC107</color>
+    <color name="menungguPembayaran">#FFC107</color>
+    <color name="pembayaranDikonfirmasi">#42700C</color>
+    <color name="packing">#673AB7</color>
+    <color name="dikirim">#009688</color>
     <color name="selesai">#4CAF50</color>
     <color name="batal">#F44336</color>
     <color name="colorAccent">#FFC107</color>

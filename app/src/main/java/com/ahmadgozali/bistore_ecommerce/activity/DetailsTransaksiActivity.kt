@@ -105,10 +105,13 @@ class DetailsTransaksiActivity : AppCompatActivity() {
         tv_ongkir.text = Helper().gantiRupiah(transaksi.ongkir)
         tv_total.text = Helper().gantiRupiah(transaksi.total_bayar)
 
-        if(transaksi.status != "Menunggu") div_footer.visibility = View.GONE
+        if(transaksi.status != "Menunggu Pembayaran") div_footer.visibility = View.GONE
 
-        var color = getColor(R.color.menunggu)
+        var color = getColor(R.color.menungguPembayaran)
         if(transaksi.status == "Selesai") color = getColor(R.color.selesai)
+        else if (transaksi.status == "Pembayaran Dikonfirmasi") color = getColor(R.color.pembayaranDikonfirmasi)
+        else if (transaksi.status == "Packing") color = getColor(R.color.packing)
+        else if (transaksi.status == "Dikirim") color = getColor(R.color.dikirim)
         else if (transaksi.status == "Batal") color = getColor(R.color.batal)
 
         tv_status.setTextColor(color)

@@ -127,7 +127,7 @@ class PengirimanActivity : AppCompatActivity() {
                 produk.id = "" + p.id
                 produk.total_item = "" + p.jumlah
                 produk.total_harga = "" + (p.jumlah + Integer.valueOf(p.harga))
-                produk.catatan = "catatan baru"
+                produk.catatan = "Pesanan baru"
 
                 produks.add(produk)
             }

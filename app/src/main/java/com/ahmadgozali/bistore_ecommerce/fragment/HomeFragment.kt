@@ -35,7 +35,7 @@ class HomeFragment : Fragment() {
 
     lateinit var vpSlider: ViewPager
     lateinit var rvProduk: RecyclerView
-    lateinit var rvProdukTerlairs: RecyclerView
+//    lateinit var rvProdukTerlairs: RecyclerView
     lateinit var rvSemuaProduk: RecyclerView
 
     lateinit var btnToKeranjang: RelativeLayout
@@ -71,16 +71,16 @@ class HomeFragment : Fragment() {
         val layoutManager = LinearLayoutManager(activity)
         layoutManager.orientation = LinearLayoutManager.HORIZONTAL
 
-        val layoutManager2 = LinearLayoutManager(activity)
-        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
+//        val layoutManager2 = LinearLayoutManager(activity)
+//        layoutManager2.orientation = LinearLayoutManager.HORIZONTAL
 
         val layoutManager3 = GridLayoutManager(activity, 2)
 
         rvProduk.adapter = AdapterProduk(requireActivity(), listProduk)
         rvProduk.layoutManager = layoutManager
 
-        rvProdukTerlairs.adapter = AdapterProduk(requireActivity(), listProduk)
-        rvProdukTerlairs.layoutManager = layoutManager2
+//        rvProdukTerlairs.adapter = AdapterProduk(requireActivity(), listProduk)
+//        rvProdukTerlairs.layoutManager = layoutManager2
 
         rvSemuaProduk.adapter = AdapterSemuaProduk(requireActivity(), listProduk)
         rvSemuaProduk.layoutManager = layoutManager3
@@ -110,7 +110,7 @@ class HomeFragment : Fragment() {
     fun init(view: View){
         vpSlider = view.findViewById(R.id.vp_slider)
         rvProduk = view.findViewById(R.id.rv_produk)
-        rvProdukTerlairs = view.findViewById(R.id.rv_produkterlaris)
+//        rvProdukTerlairs = view.findViewById(R.id.rv_produkterlaris)
         rvSemuaProduk = view.findViewById(R.id.rv_semuaProduk)
     }
 
