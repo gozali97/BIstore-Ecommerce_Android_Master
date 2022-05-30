@@ -16,7 +16,9 @@ import com.ahmadgozali.bistore_ecommerce.app.ApiConfig
 import com.ahmadgozali.bistore_ecommerce.app.ApiConfigAlamat
 import com.ahmadgozali.bistore_ecommerce.helper.Helper
 import com.ahmadgozali.bistore_ecommerce.helper.SharedPref
-import com.ahmadgozali.bistore_ecommerce.model.*
+import com.ahmadgozali.bistore_ecommerce.model.Alamat
+import com.ahmadgozali.bistore_ecommerce.model.Checkout
+import com.ahmadgozali.bistore_ecommerce.model.ResponModel
 import com.ahmadgozali.bistore_ecommerce.model.rajaongkir.Costs
 import com.ahmadgozali.bistore_ecommerce.model.rajaongkir.ResponOngkir
 import com.ahmadgozali.bistore_ecommerce.model.rajaongkir.Result
@@ -149,46 +151,9 @@ class PengirimanActivity : AppCompatActivity() {
         val json = Gson().toJson(checkout, Checkout::class.java)
         Log.d("Respond: ", "json" +json)
 
-/*        val intent = Intent(this, PembayaranActivity::class.java)
+        val intent = Intent(this, PembayaranActivity::class.java)
         intent.putExtra("extra", json)
-        startActivity(intent)*/
-
-        ApiConfig.instanceRetrofit.checkout(checkout).enqueue(object : Callback<ResponModel> {
-
-            override fun onResponse(call: Call<ResponModel>, response: Response<ResponModel>) {
-                if (!response.isSuccessful) {
-                    error(response.message())
-                    return
-                }
-
-                val respon = response.body()!!
-
-                if (respon.success == 1){
-
-                    val jsTransaksi = Gson().toJson(respon.transaksi, Transaksi::class.java)
-                    val jsCheckout = Gson().toJson(checkout, Checkout::class.java)
-
-                    val intent = Intent(this@PengirimanActivity, PaymentActivity::class.java)
-                    intent.putExtra("transaksi", jsTransaksi)
-                    intent.putExtra("checkout", jsCheckout)
-                    startActivity(intent)
-
-                    for (produk in checkout.produks){
-                        myDb.daoKeranjang().deleteById(produk.id)
-                    }
-
-                }else{
-                    error(respon.message)
-                    Toast.makeText(this@PengirimanActivity, "Error:"+respon.message, Toast.LENGTH_SHORT).show()
-                }
-            }
-
-            override fun onFailure(call: Call<ResponModel>, t: Throwable) {
-                error(t.message.toString())
-//                Toast.makeText(this@PembayaranActivity, "Error:"+t.message, Toast.LENGTH_SHORT).show()
-            }
-
-        })
+        startActivity(intent)
 
     }
 
