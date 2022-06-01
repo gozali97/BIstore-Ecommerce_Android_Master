@@ -18,27 +18,45 @@
         android:padding="@dimen/_15sdp"
         android:orientation="vertical">
 
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Metode Pembayaran"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@color/colorPrimary_800"-->
+<!--            android:textSize="@dimen/_14ssp"/>-->
+
+<!-- -->
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/rv_bank"-->
+<!--            android:layout_marginTop="@dimen/_10sdp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="Proses Pembayaran"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_marginTop="@dimen/_55sdp"-->
+<!--            android:textColor="@color/colorBiru"-->
+<!--            android:textSize="@dimen/_14ssp"/>-->
+
+        <ImageView
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/baliindah"
+            android:layout_marginTop="@dimen/_75sdp"/>
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Metode Pembayaran"
+            android:layout_gravity="center_horizontal"
+            android:text="Sedang memuat halaman pembayaran.."
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary_800"
-            android:textSize="@dimen/_14ssp"/>
-
- 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_bank"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Informasi Belanja"
-            android:textStyle="bold"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_35sdp"
             android:textColor="@color/colorPrimary_800"
             android:textSize="@dimen/_14ssp"/>
 
