@@ -100,7 +100,7 @@ class DetailsTransaksiActivity : AppCompatActivity() {
         tv_tgl.text = Helper().convertTanggal(transaksi.created_at, formatBaru)
         tv_penerima.text = transaksi.nama_penerima+" - "+ transaksi.no_tlp
         tv_alamat.text = transaksi.detail_lokasi
-        tv_kodeUnik.text = Helper().gantiRupiah(transaksi.kode_unik)
+//        tv_kodeUnik.text = Helper().gantiRupiah(transaksi.kode_unik)
         tv_totalBelanja.text = Helper().gantiRupiah(transaksi.total_harga)
         tv_ongkir.text = Helper().gantiRupiah(transaksi.ongkir)
         tv_total.text = Helper().gantiRupiah(transaksi.total_bayar)

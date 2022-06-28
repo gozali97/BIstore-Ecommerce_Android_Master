@@ -38,6 +38,7 @@ class AdapterDetailsProdukTransaksi(var data:ArrayList<DetailsTransaksi>):Recycl
         val tvNama = view.findViewById<TextView>(R.id.tv_nama)
         val imgProduk = view.findViewById<ImageView>(R.id.img_produk)
         val tvharga = view.findViewById<TextView>(R.id.tv_harga)
+        val tvBerat = view.findViewById<TextView>(R.id.tv_berat)
         val tvTotalHarga = view.findViewById<TextView>(R.id.tv_totalHarga)
         val tvTanggal = view.findViewById<TextView>(R.id.tv_tgl)
         val tvJumlah = view.findViewById<TextView>(R.id.tv_jumlah)
@@ -59,6 +60,7 @@ class AdapterDetailsProdukTransaksi(var data:ArrayList<DetailsTransaksi>):Recycl
         val namaProduk = list.produk.nama_produk
         val p = list.produk
         holder.tvNama.text = namaProduk
+        holder.tvBerat.text = p.berat.toString() + " Kg"
         holder.tvharga.text = Helper().gantiRupiah(p.harga)
         holder.tvTotalHarga.text = Helper().gantiRupiah(list.total_harga)
         holder.tvJumlah.text = list.total_item.toString() + " Items"

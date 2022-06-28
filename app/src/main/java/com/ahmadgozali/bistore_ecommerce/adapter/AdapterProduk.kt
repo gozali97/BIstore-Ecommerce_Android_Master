@@ -29,6 +29,7 @@ class AdapterProduk(var activity: Activity, var data:ArrayList<Produk>):Recycler
 
         val tvNama = view.findViewById<TextView>(R.id.tv_nama)
         val tvHarga = view.findViewById<TextView>(R.id.tv_harga)
+//        val tvStok = view.findViewById<TextView>(R.id.tv_stok)
         val imgProduk = view.findViewById<ImageView>(R.id.img_produk)
         val layout = view.findViewById<CardView>(R.id.layout)
     }
@@ -46,6 +47,7 @@ class AdapterProduk(var activity: Activity, var data:ArrayList<Produk>):Recycler
 
         holder.tvNama.text = data[position].nama_produk
         holder.tvHarga.text = Helper().gantiRupiah(data[position].harga)
+//        holder.tvStok.text = data[position].stok
 //        holder.imgProduk.setImageResource(data[position].gambar)
 
         val image = Config.produkUrl + data[position].gambar

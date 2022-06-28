@@ -39,9 +39,7 @@ class AkunFragment : Fragment() {
         init(view)
 
         s = SharedPref(activity!!)
-
         mainButtom()
-
         setData()
         return view
     }
@@ -59,8 +57,9 @@ class AkunFragment : Fragment() {
             startActivity(Intent(requireActivity(), ListAlamatActivity::class.java))
         }
 
-        btnKeranjang.setOnClickListener {
-        }
+//        btnKeranjang.setOnClickListener {
+//
+//        }
 
     }
 
@@ -86,10 +85,8 @@ class AkunFragment : Fragment() {
         tvEmail = view.findViewById(R.id.tv_email)
         btnRiwayat = view.findViewById(R.id.btn_riwayat)
         btnAlamat = view.findViewById(R.id.btn_alamat)
-        btnKeranjang = view.findViewById(R.id.btn_keranjang)
+//        btnKeranjang = view.findViewById(R.id.btn_keranjang)
     }
-
-    
 
 
 }

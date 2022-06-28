@@ -48,6 +48,12 @@
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/layout/toolbar_detail.xml" value="0.25" />
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.22447916666666667" />
         <entry key="..\:/Tugas Akhir/android/BIstore-Ecommerce/app/src/main/res/xml/network.xml" value="0.2074074074074074" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/activity_detail_produk.xml" value="0.33" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/activity_details_transaksi.xml" value="0.22447916666666667" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/fragment_akun.xml" value="0.22447916666666667" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/fragment_home.xml" value="0.22447916666666667" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/item_produk.xml" value="0.15625" />
+        <entry key="..\:/Tugas Akhir/android/BIstore_Ecommerce/app/src/main/res/layout/item_produk_transaksi.xml" value="0.22447916666666667" />
         <entry key="app/src/main/res/layout/activity_payment.xml" value="0.3423913043478261" />
         <entry key="app/src/main/res/layout/activity_pembayaran.xml" value="0.1691995947315096" />
         <entry key="app/src/main/res/layout/activity_pengiriman.xml" value="0.3423913043478261" />

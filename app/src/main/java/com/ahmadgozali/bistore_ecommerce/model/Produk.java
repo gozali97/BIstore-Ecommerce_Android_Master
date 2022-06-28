@@ -20,6 +20,9 @@ public class Produk implements Serializable {
     public int kategori_id;
     public String deskripsi;
     public String gambar;
+    public String stok;
+    public String model;
+    public String berat;
     public String created_at;
     public String updated_at;
 

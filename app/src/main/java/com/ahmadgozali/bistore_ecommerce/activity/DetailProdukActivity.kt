@@ -68,6 +68,9 @@ class DetailProdukActivity : AppCompatActivity() {
        }
 
        btn_bayar.setOnClickListener {
+               val intent = Intent(this, PengirimanActivity::class.java)
+               intent.putExtra("product", "" + totalHarga)
+               startActivity(intent)
 
        }
 
@@ -96,6 +99,7 @@ class DetailProdukActivity : AppCompatActivity() {
             })
     }
 
+
     private fun cekKeranjang(){
         val dataKeranjang = myDb.daoKeranjang().getAll()
 
@@ -116,8 +120,12 @@ class DetailProdukActivity : AppCompatActivity() {
         tv_nama.text = produk.nama_produk
         tv_harga.text = Helper().gantiRupiah(produk.harga)
         tv_deskripsi.text = produk.deskripsi
+        tv_stok.text = produk.stok
+        tv_model.text = produk.model
+        tv_berat.text = produk.berat
 
-        val image = Config.produkUrl + produk.gambar
+
+       val image = Config.produkUrl + produk.gambar
         Picasso.get()
             .load(image)
             .placeholder(R.drawable.produk)
